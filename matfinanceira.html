@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link type='text/css' rel='stylesheet' href='estilo.css'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@900&family=Leckerli+One&family=Signika&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <title> Matemática Financeira </title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div id="capa">
+            <h1>
+                Matemática Financeira
+            </h1>
+        </div>
+        <div id="menu">
+            <nav class="navbar navbar-expand-sm navbar-white">
+                <a class=" navbar-brand " href="index.html"><img class="logo" src="imagens/logo.png"> </a>
+                <ul class=" navbar-nav ">
+                    <li class=" nav-item ">
+                        <a class=" nav-link " href="quadratica.html">Função Quadrática</a>
+                    </li>
+                    <li class=" nav-item ">
+                        <a class=" nav-link " href="modular.html">Função Modular</a>
+                    </li>
+                    <li class=" nav-item ">
+                        <a class=" nav-link " href="matfinanceira.html">Matemática Financeira</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="body">
+            <h2>
+                Conceito</h2>
+            <p>A matemática financeira é uma área que procura entender a matemática envolvida por trás das questões econômicas-financeiras, muito presente nas rotinas de toda a população. Essa matemática nos ajuda a entender os processos que envolvem a contabilidade pessoal, empresarial e governamental.</p>
+            <p>Alguns conceitos básicos e mais importantes que envolvem o conteúdo estudado:</p>
+            <div class="table-responsive-sm">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Conceito</th>
+                            <th>Explicação</th>
+                            <th>Símbolo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Capital Inicial</td>
+                            <td>Valor inicial de um empréstimo ou aplicação, sobre o qual irão incidir os juros.</td>
+                            <td>C, P ou PV</td>
+                        </tr>
+                        <tr>
+                            <td>Prazo</td>
+                            <td>Tempo de duração do empréstimo ou do investimento.</td>
+                            <td>n</td>
+                        </tr>
+                        <tr>
+                            <td>Juro</td>
+                            <td>Preço pago pelo empréstimo do capital. Também é o rendimento do dinheiro aplicado.</td>
+                            <td>J</td>
+                        </tr>
+                        <tr>
+                            <td>Taxa de Juros</td>
+                            <td>Taxa percentual ou unitária do rendimento do capital ou pagamento pelo uso do capital em um determinado prazo.</td>
+                            <td>i</td>
+                        </tr>
+                        <tr>
+                            <td>Montante</td>
+                            <td>Valor total (final) a ser pago ou recebido com a finalidade de quitar o empréstimo.</td>
+                            <td>M, S ou FV </td>
+                        </tr>
+                        <tr>
+                            <td>Capitalização Simples</td>
+                            <td>Juros simples. É uma função com crescimento linear e que tem relação com a função afim.</td>
+                            <td> - </td>
+                        </tr>
+                        <tr>
+                            <td>Capitalização Composta</td>
+                            <td>Juros compostos. É uma função com crescimento exponencial e tem relação com a função exponencial.</td>
+                            <td> - </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p>Mas o que são juros simples e juros compostos?</p>
+            <p>Juros simples é quando a taxa de juros incide sempre sobre o capital inicial, durante determinado período. As fórmulas mais importantes são:</p>
+            <ul type="disc">
+                <li>Juros: J = C * i * n</li>
+                <li>Montante: M = C + J ou M = C ( 1 + i * n )</li>
+                <li>Transformar as unidades de tempo: i<sub>ano</sub> = 2i<sub>semestre</sub> = 4i<sub>trimestre</sub> = 6i<sub>bimestre</sub> = 12i<sub>meses</sub> = 365i<sub>dias</sub></li>
+            </ul>
+            <p>Juros compostos é quando a taxa de juros incide sobre o principal acrescido dos juros acumulados até o período anterior, ou seja, juros sobre juros. Fórmulas mais importantes:</p>
+            <ul type="disc">
+                <li>Montante: M = C ( 1 + i )<sup>n</sup></li>
+            </ul>
+            <p>**Ou seja, o cálculo de juros compostos é um cálculo exponencial.</p>
+            <br />
+
+            <h2>Considerações sobre o conteúdo</h2>
+            <p>Eu escolhi o conteúdo de Matemática financeira pois, além de ter gostado muito de trabalhar com os conceitos, ele também consegue englobar os conceitos de função afim, função exponencial e função logarítmica. Ou seja, através dos cálculos de juros simples e juros compostos eu consigo satisfazer todos os conteúdos anteriores.
+            </p>
+            <br />
+
+            <h2>Métodos</h2>
+            <p>Bom, basicamente eu utilizava as fórmulas e calculava o que era solicitado no enunciado. Por vezes, era necessário utilizar das regras das funções exponenciais ou logarítmicas, o que acabava dificultando um pouco.</p>
+            <center> <img class="img-fluid" src="imgfinanceira/questao1.png"> </center>
+            <center> <img class="img-fluid" src="imgfinanceira/exemplo1.jpeg"> </center>
+            <center> <img class="img-fluid" src="imgfinanceira/exemplo2.jpeg"> </center>
+            <br />
+
+            <h2>Desempenho no conteúdo e nas atividades</h2>
+            <p>Em relação ao conteúdo, acredito que consegui absorver muito bem o conceito, inclusive a lógica da matemática financeira facilitou o meu entendimento para fazer as questões de função exponencial.</p>
+            <p>Eu tive um pouco mais de dificuldade nas questões que envolviam logaritmos, mas depois de ler e fazer algumas tentativas, consegui entender e realizar o exercício. Acho que eu poderia ter procurado ajuda da professora para entender melhor a construção dos gráficos, pois, por algum motivo, eles não ficavam certos no Geogebra.</p>
+            <p>Em relação às atividades, ainda não sei qual foi o resultado.</p>
+            <br />
+
+            <center><a href="https://ifrs.edu.br/erechim/" target="_blank"><img id='ifrs' src='imagens/ifrs_erechim.png'></a></center>
+
+        </div>
+    </div>
+</body>
+
+</html>

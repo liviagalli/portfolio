@@ -1,36 +1,41 @@
-h1 {
+#capa h1 {
     font-family: 'Barlow', sans-serif;
-    text-shadow: 7px 3px 0 black;
-    color: white;
+    text-shadow: 7px 3px 0 #c9c8c8;
+    color: black;
     font-size: 70px;
     text-align: center;
+    padding-top: 27px;
 }
 
 #capa {
-    background-color: rgba(126, 126, 237, 0.62);
-    margin: 0px;
-    padding: 5px;
-}
-
-/* font-family: 'Signika', sans-serif; */
-body {
-    background-color: #ffef9a;
-    margin: 0px;
-}
-
-table {
-    margin: 0px;
-    background-color: white;
-    padding: 10px;
-    border: 2px dashed black;
+    background-image: url("imagens/fundocapa.jpg");
     width: 100%;
+    height: 150px;
 }
 
-th {
+.logo {
+    border-radius: 100px;
+    width: 80px;
+    height: 80px;
+}
+
+.logo:hover {
+    border-radius: 100px;
+    width: 100px;
+    height: 100px;
+    box-shadow: 3px 3px 5px rgb(94, 81, 198);
+}
+
+#menu {
+    background-color: rgb(209, 203, 255);
+    border: 3px solid white;
+}
+
+#menu a {
+    color: rgba(44, 16, 162, 0.86);
+    font-size: 22px;
     font-family: 'Leckerli One', cursive;
-    text-align: center;
-    padding-left: 50px;
-    font-size: 20px;
+    padding: 10px;
 }
 
 a {
@@ -41,36 +46,48 @@ a:hover {
     color: rgba(188, 78, 156, 0.64);
 }
 
+.body {
+    background: linear-gradient(to bottom, rgb(209, 203, 255), rgb(195, 187, 255));
+    padding: 10px;
+}
+
+.body h2 {
+    font-size: 30px;
+}
+
+
 h2 {
     font-family: 'Leckerli One', cursive;
     text-align: center;
     color: black;
     text-shadow: 4px -1px 0 white;
     border-radius: 20px;
-    background: linear-gradient(to right, rgba(126, 126, 237, 0.62), rgba(188, 78, 156, 0.64), rgba(126, 126, 237, 0.62));
+    background: linear-gradient(to right, rgba(66, 40, 173, 0.86), rgba(90, 64, 203, 0.86), rgba(66, 40, 173, 0.86));
 }
 
-p {
+.body p,
+ul,
+ol {
     font-family: 'Signika', sans-serif;
-    text-align: center;
+    text-align: left;
     padding-left: 70px;
     padding-right: 70px;
     font-size: 20px;
     color: black;
 }
 
+td,
+th,
+tr {
+    text-align: center;
+    padding: 5px;
+    border: 4px solid white;
+}
+
 #ifrs {
     position: fixed;
     bottom: 2px;
     right: 0;
-    width: 100px;
-    height: 110px;
-}
-
-#ifrs:hover {
-    position: fixed;
-    bottom: 2px;
-    right: 0;
-    width: 120px;
+    width: 90px;
     height: 120px;
 }
