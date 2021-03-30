@@ -1,0 +1,107 @@
+#capa h1 {
+    font-family: 'Barlow', sans-serif;
+    text-shadow: 7px 3px 0 #c9c8c8;
+    color: black;
+    font-size: 70px;
+    text-align: center;
+    padding-top: 27px;
+}
+
+#capa {
+    background-image: url("../imagens/fundocapa.jpg");
+    width: 100%;
+    height: 100%;
+}
+
+.logo {
+    border-radius: 100px;
+    width: 70px;
+    height: 70px;
+}
+
+.logo:hover {
+    border-radius: 100px;
+    width: 80px;
+    height: 80px;
+    box-shadow: 3px 3px 5px rgb(94, 81, 198);
+}
+
+#menu {
+    background-color: rgb(209, 203, 255);
+    border: 3px solid white;
+}
+
+#menu a {
+    color: rgba(44, 16, 162, 0.86);
+    font-size: 20px;
+    font-family: 'Leckerli One', cursive;
+    padding: 8px;
+    text-align: center;
+}
+
+#menu a:hover {
+    text-shadow: 5px 3px 6px rgb(94, 81, 198);
+}
+
+.body {
+    background: linear-gradient(to bottom, rgb(209, 203, 255), rgb(195, 187, 255));
+    padding: 10px;
+}
+
+.body h2 {
+    font-size: 30px;
+}
+
+
+h2 {
+    font-family: 'Leckerli One', cursive;
+    text-align: center;
+    color: black;
+    text-shadow: 4px -1px 0 white;
+    border-radius: 20px;
+    background: linear-gradient(to right, rgba(66, 40, 173, 0.86), rgba(90, 64, 203, 0.86), rgba(66, 40, 173, 0.86));
+}
+
+.body p,
+ul,
+ol {
+    font-family: 'Signika', sans-serif;
+    text-align: left;
+    padding-left: 70px;
+    padding-right: 70px;
+    font-size: 20px;
+    color: black;
+    margin: 0;
+}
+
+td,
+th,
+tr {
+    text-align: center;
+    padding: 5px;
+    border: 4px solid white;
+}
+
+#ifrs {
+    position: fixed;
+    bottom: 2px;
+    right: 0;
+    width: 90px;
+    height: 120px;
+}
+
+.textspan {
+    background-color: rgba(157, 134, 255, 0.86);
+    margin: 3px;
+    border-radius: 20px;
+    padding: 2px;
+}
+
+b {
+    color: rgba(39, 12, 152, 0.86);
+}
+
+.img {
+    padding: 8px;
+    text-align: center;
+}

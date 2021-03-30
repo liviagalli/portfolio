@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link type='text/css' rel='stylesheet' href='estilo.css'>
+    <link type='text/css' rel='stylesheet' href='css/estilo.css'>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@900&family=Leckerli+One&family=Signika&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,13 +17,13 @@
 </head>
 
 <body>
-    <div class="container-fluid">
+    <div class="container">
         <div id="capa">
             <h1>
                 Função Quadrática
             </h1>
         </div>
-        <div id="menu">
+         <div id="menu">
             <nav class="navbar navbar-expand-sm navbar-white">
                 <a class=" navbar-brand " href="index.html"><img class="logo" src="imagens/logo.png"> </a>
                 <ul class=" navbar-nav ">
@@ -36,6 +36,15 @@
                     <li class=" nav-item ">
                         <a class=" nav-link " href="matfinanceira.html">Matemática Financeira</a>
                     </li>
+                    <li class=" nav-item ">
+                        <a class=" nav-link " href="PAePG.html">PA e PG</a>
+                    </li>
+                    <li class=" nav-item ">
+                        <a class=" nav-link " href="estatistica.html">Estatística</a>
+                    </li>
+                     <li class=" nav-item ">
+                        <a class=" nav-link " href="conclusao.html">Conclusão</a>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -45,18 +54,21 @@
                 Conceito</h2>
             <p>A função quadrática é uma função f = IR -> IR, que possui como fórmula:
                 f(x) : ax² + bx + c</p>
+            <br />
             <p>Existem algumas regras para que a função seja quadrática, entre elas:</p>
             <ul type="disc">
                 <li>O coeficiente A precisa ser diferente de 0;</li>
                 <li>O gráfico é uma parábola;</li>
                 <li>O domínio é D(f) = IR e a imagem depende da concavidade (negativa ou positiva) e do vértice;</li>
             </ul>
+            <br />
             <p>Para calcular o f(x) dado o x basta substituir o valor de x na função. Para calcular o valor de x ou as raízes da função é necessário realizar o cálculo de Bháskara. Existem técnicas, a partir do valor do delta, para saber quantas raízes a função irá possuir:</p>
             <ul type="disc">
                 <li>&#916; = 0 : possui 2 raízes reais iguais, então o eixo x do gráfico terá uma única intersecção;</li>
                 <li>&#916; > 0 : possui 2 raízes reais diferentes, então o eixo x do gráfico terá duas intersecções;</li>
                 <li>&#916; &lt; 0 : não possui raízes reais, então o eixo x não possuirá nenhuma intersecção.</li>
             </ul>
+            <br />
             <p>A construção do gráfico pode ser feita a partir de alguns passos:</p>
             <ol type="1">
                 <li>Identificar a concavidade do gráfico:</li>
@@ -77,26 +89,24 @@
 
             <h2>Métodos</h2>
             <p>Quando a função era completa, eu resolvia a partir da bháskara, e quando era incompleta eu fazia da seguinte forma: </p>
-            <center><img class="img-fluid" src="imgquadratica/incompletas.jpeg"></center>
+            <div class="img"><img class="img-fluid" src="imagens/imgquadratica/incompletas.jpeg"></div>
+            <br />
             <p>Para a construção do gráfico eu apenas seguia os passos descritos anteriormente. Para calcular os pontos do vértice eu usava os seguintes métodos: Xv = -b/2a para o vértice no eixo x e para o vértice no eixo y (Yv) eu substituía o valor encontrado em Xv na função. O domínio, geralmente, é basicamente D(f) = IR, e a Imagem pode ser escrita observando o Yv e qual a concavidade do gráfico (se for para baixo o infinito será negativo, se for para cima o infinito será positivo).</p>
-            <center> <img class="img-fluid" src="imgquadratica/exe5.jpeg"> </center>
+            <div class="img"> <img class="img-fluid" src="imagens/imgquadratica/exe5.jpeg"> </div>
             <br />
 
             <h2>Desempenho no conteúdo e nas atividades</h2>
             <p>Em relação ao conteúdo, acredito que consegui absorver muito bem. Eu tive dificuldade em um dos exercícios propostos, inclusive necessitei pedir ajuda para a professora via Whatsapp para conseguir realizá-lo. </p>
-            <center>
-                <img class="img-fluid" src="imgquadratica/exe4questao.png">
-                <br />
-                <img class="img-fluid" src="imgquadratica/exe4.png">
-            </center>
-            <p>Eu havia compreendido a lógica da construção da função quadrática, porém não havia entendido a proposta da letra B, mesmo construindo o gráfico. Ao tirar a dúvida com a prof, ela me explicou e finalmente compreendi o exercício. Basicamente, era mais uma questão de lógica do que de cálculo, já que eu precisava descobrir o intervalo numérico que o valor x poderia pertencer para tornar o recorte dos quadrados proporcional aos valores métricos da caixa.</p>
-            <p>Em relação às atividades, ainda não sei qual foi o resultado.</p>
+            <div class="img"> <img class="img-fluid" src="imagens/imgquadratica/exe4questao.png"> </div>
+            <div class="img"><img class="img-fluid" src="imagens/imgquadratica/exe4.png"></div>
+            <br />
+            <p>Eu havia compreendido a lógica da construção da função quadrática (por mais que eu tenha errado um dos números da equação), porém não havia entendido a proposta da letra B, mesmo construindo o gráfico. Ao tirar a dúvida com a prof, ela me explicou e finalmente compreendi o exercício. Basicamente, era mais uma questão de lógica do que de cálculo, já que eu precisava descobrir o intervalo numérico que o valor x poderia pertencer para tornar o recorte dos quadrados proporcional aos valores métricos da caixa.</p>
+            <br />
+            <p>Em relação às atividades, eu concluo que fui muito bem, acertei a maior parte das questões e minha nota foi boa. </p>
             <br />
 
             <center><a href="https://ifrs.edu.br/erechim/" target="_blank"><img id='ifrs' src='imagens/ifrs_erechim.png'></a></center>
 
         </div>
     </div>
-</body>
-
-</html>
+</body></html>

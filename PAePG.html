@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link type='text/css' rel='stylesheet' href='css/estilo.css'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@900&family=Leckerli+One&family=Signika&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <title> PA e PG </title>
+</head>
+
+<body>
+    <div class="container">
+        <div id="capa">
+            <h1>
+                Progressão Aritmética e Progressão Geométrica
+            </h1>
+        </div>
+      <div id="menu">
+            <nav class="navbar navbar-expand-sm navbar-white">
+                <a class=" navbar-brand " href="index.html"><img class="logo" src="imagens/logo.png"> </a>
+                <ul class=" navbar-nav ">
+                    <li class=" nav-item ">
+                        <a class=" nav-link " href="quadratica.html">Função Quadrática</a>
+                    </li>
+                    <li class=" nav-item ">
+                        <a class=" nav-link " href="modular.html">Função Modular</a>
+                    </li>
+                    <li class=" nav-item ">
+                        <a class=" nav-link " href="matfinanceira.html">Matemática Financeira</a>
+                    </li>
+                    <li class=" nav-item ">
+                        <a class=" nav-link " href="PAePG.html">PA e PG</a>
+                    </li>
+                    <li class=" nav-item ">
+                        <a class=" nav-link " href="estatistica.html">Estatística</a>
+                    </li>
+                     <li class=" nav-item ">
+                        <a class=" nav-link " href="conclusao.html">Conclusão</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="body">
+            <h2>
+                Conceito</h2>
+            <p>Para entender os conceitos de PA e PG, primeiro precisamos estudar sobre as sequências numéricas. Por conceito, uma sequência numérica é a sucessão de números que seguem um padrão específico, sendo uma função que associa, a cada elemento n ∈ IN*, um único elemento a<sub>n</sub> ∈ IR. </p>
+
+            <p>f: IN* -> IR, onde IN* corresponde às posições dos termos da sequência.</p>
+            <br />
+            <p>Pela Lei de Formação, podemos estabelecer fórmulas diferentes para encontrar os termos da sequência. As mais utilizadas são:</p>
+            <ul type="disc">
+                <li> <span class="textspan">Fórmula de recorrência: </span> são dadas duas regras, uma para estabelecer o primeiro termo e outra para calcular os demais termos a partir de seu antecessor. Exemplo:
+                    <p> a<sub>1</sub> = 0 </p>
+                    <p> a<sub>n</sub> = a<sub>n</sub> - 1 + 2 </p>
+                    <p> Sequência = {0, 2, 4, 6, 8, 10, …} </p>
+                </li>
+                <li> <span class="textspan"> Termo geral: </span> dada uma fórmula que expressa a<sub>n</sub> em função de n. Exemplo:
+                    <p>Sendo n ≥ 1 --> a<sub>n</sub> = 2<sub>n</sub> - 2</p>
+                    <p> Sequência = {0, 2, 4, 6, 8, 10, …} </p>
+                </li>
+            </ul>
+            <br />
+            <p><b>Progressão Aritmética</b> é a sequência de números em que cada termo, a partir do segundo, é o resultado da soma de seu antecessor com uma constante r (razão). Ou seja, a subtração de um termo an com seu antecessor (a partir do segundo termo) resultará na razão.</p>
+
+            <p> (1, 3, 5, 7, 9, …) ----> a<sub>1</sub> = 1 e r = 2</p>
+            <br />
+            <p>A PA pode ser classificada em:</p>
+            <ul type="disc">
+                <li>Crescente: r > 0;</li>
+                <li>Constante: r = 0;</li>
+                <li>Decrescente: r &lt; 0;</li>
+            </ul>
+            <br />
+            <p>O termo geral da PA pode ser definido como: <b>a<sub>n</sub> = a<sub>1</sub> + (n - 1) * r</b></p>
+            <p>onde:</p>
+            <ul type="disc">
+                <li>a1 = primeiro termo</li>
+                <li>an = termo geral</li>
+                <li>n = posição do termo</li>
+                <li>r = razão</li>
+            </ul>
+            <br />
+
+            <p>O gráfico de uma PA é semelhante ao crescimento linear de uma função afim, entretanto, ele não pode ser uma reta pois seu domínio são apenas os números naturais maiores que 0. Sendo assim, o gráfico da PA é constituído de pontos alinhados.</p>
+
+            <div class="img"> <img class="img-fluid" src="imagens/imgPAePG/graficoPA.jpeg"> </div>
+
+            <br />
+
+            <p>A interpolação aritmética consiste em inserir k meios aritméticos entre dois termos a e b. Para isso, calculamos quantas posições a PA terá a partir da equação: <b>n = k + 2</b>, e depois aplicamos o termo geral para descobrir a razão. </p>
+
+            <div class="img"> <img class="img-fluid" src="imagens/imgPAePG/interpolacaoPA.jpeg"> </div>
+            <br />
+
+            <p>Para somar todos os termos da PA, usamos a fórmula:
+                <b>Sn = (a<sub>1</sub> + a<sub>n</sub>) / 2</b>
+            </p>
+            <br />
+            <br />
+
+            <p><b>Progressão Geométrica</b> é a sequência de números onde cada termo, a partir do segundo, é o produto do seu antecessor com uma constante q. Ou seja, a divisão de um termo an com seu antecessor (a partir do segundo termo) resultará na razão.</p>
+            <p>(-1, -2, -4, -8, -16…) ----> a<sub>1</sub> = -1 e q = 2.</p>
+
+            <br />
+
+            <p>Podemos classificar a PG em:</p>
+            <ul type="disc">
+                <li>Crescente:</li>
+                <ul type="square">
+                    <li>PG com termos positivos: q > 1;</li>
+                    <li>PG com termos negativos: 0 &lt; q &lt; 1;</li>
+                </ul>
+                <li>Constante:</li>
+                <ul type="square">
+                    <li>PG com todos os termos nulos: a<sub>1</sub> = 0 e q qualquer;</li>
+                    <li>PG com termos iguais e não nulos: a ≠ 0 e q = 1;</li>
+                </ul>
+                <li>Decrescente:</li>
+                <ul type="square">
+                    <li>PG com termos positivos: 0 &lt; q &lt; 1;</li>
+                    <li>PG com termos negativos: q > 1;</li>
+                </ul>
+                <li>Alternantes: cada termo tem sinal contrário ao do termo antecessor. Isso ocorre quando q &lt; 0.</li>
+                <li>Estacionárias: apenas o primeiro termo é diferente de 0. Nesse caso, a<sub>1</sub> ≠ 0 e q = 0.</li>
+            </ul>
+            <br />
+
+            <p>O termo geral da PG é definido como: <b> a<sub>n</sub> = a<sub>1</sub> * q<sup>n-1</sup></b> </p>
+            <br />
+
+            <p>O gráfico da PG é semelhante ao crescimento exponencial, entretanto, por causa da restrição do seu domínio, não é possível traçar a linha curva. Dessa forma, o gráfico será constituído por pontos que formam uma curva exponencial.</p>
+            <div class="img"> <img class="img-fluid" src="imagens/imgPAePG/graficoPG.jpeg"> </div>
+            <br />
+
+            <p>A interpolação geométrica segue o mesmo princípio da interpolação aritmética, sendo diferente apenas na fórmula para calcular a razão da PG.</p>
+            <br />
+
+            <p>A soma dos termos de uma PG finita é dada por: <b>Sn = a<sub>1</sub> * [(1 - q <sup>n</sup>) / (1 - q)]</b></p>
+            <br />
+
+            <p>A soma dos termos de uma PG infinita, quando -1 &lt; q &lt; 1 e com limite igual a zero, é dada por:
+                <b><small>lim</small>Sn = a<sub>1</sub> / 1 - q </b>
+            </p>
+            <br />
+
+            <h2>Considerações sobre o conteúdo</h2>
+            <p>Eu selecionei o conteúdo de PA e PG pois, apesar de eu ter achado um pouco cansativo de estudar todo o material, os conceitos e cálculos são de fácil entendimento e são legais de serem realizados.
+            </p>
+            <br />
+
+            <h2>Métodos</h2>
+            <p>Para os cálculos não teve muito segredo, apenas utilizava a fórmula conforme o que era descrito no enunciado da atividade. Além disso, eu segui a linha de raciocínio usado pela professora nos exemplos. </p>
+            <div class="img"> <img class="img-fluid" src="imagens/imgPAePG/questao1e2.png"> </div>
+            <div class="img"> <img class="img-fluid" src="imagens/imgPAePG/questao1e2_resp.jpeg"> </div>
+            <br />
+            <div class="img"> <img class="img-fluid" src="imagens/imgPAePG/questao3e4.png"> </div>
+            <div class="img"> <img class="img-fluid" src="imagens/imgPAePG/questao3e4_resp.jpeg"> </div>
+            <br />
+
+            <h2>Desempenho no conteúdo e nas atividades</h2>
+            <p> Eu acredito que consegui compreender com clareza o conteúdo, pois não achei complicado e assistindo a aula tudo ficou bem esclarecido. Confesso que demorei pra estudar todo o material, pois havia muitos conceitos e eu venho copiando todo o conteúdo no caderno.</p>
+            <p>Em relação ao desempenho nas atividades, ainda não sei o resultado. </p>
+            <br />
+
+            <center><a href="https://ifrs.edu.br/erechim/" target="_blank"><img id='ifrs' src='imagens/ifrs_erechim.png'></a></center>
+
+        </div>
+    </div>
+</body></html>

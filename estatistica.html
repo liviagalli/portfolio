@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link type='text/css' rel='stylesheet' href='css/estilo.css'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@900&family=Leckerli+One&family=Signika&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <title> Estatística </title>
+</head>
+
+<body>
+    <div class="container">
+        <div id="capa">
+            <h1>
+                Estatística
+            </h1>
+        </div>
+        <div id="menu">
+            <nav class="navbar navbar-expand-sm navbar-white">
+                <a class=" navbar-brand " href="index.html"><img class="logo" src="imagens/logo.png"> </a>
+                <ul class=" navbar-nav ">
+                    <li class=" nav-item ">
+                        <a class=" nav-link " href="quadratica.html">Função Quadrática</a>
+                    </li>
+                    <li class=" nav-item ">
+                        <a class=" nav-link " href="modular.html">Função Modular</a>
+                    </li>
+                    <li class=" nav-item ">
+                        <a class=" nav-link " href="matfinanceira.html">Matemática Financeira</a>
+                    </li>
+                    <li class=" nav-item ">
+                        <a class=" nav-link " href="PAePG.html">PA e PG</a>
+                    </li>
+                    <li class=" nav-item ">
+                        <a class=" nav-link " href="estatistica.html">Estatística</a>
+                    </li>
+                     <li class=" nav-item ">
+                        <a class=" nav-link " href="conclusao.html">Conclusão</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="body">
+            <h2>
+                Conceito</h2>
+            <p>A estatística compreende o conjunto de métodos utilizados para coletar e interpretar dados, visando possibilitar a previsão de fenômenos futuros a partir de cálculos. Estudamos a <span class="textspan">estatística descritiva</span>, que descreve, organiza e apresenta os dados através de tabelas, gráficos e medidas.</p>
+            <br />
+
+            <p>Nesse aspecto, temos alguns conceitos para serem entendidos:</p>
+            <ul type="disc">
+                <li><span class="textspan">População:</span> conjunto de elementos que irão ser investigados.</li>
+                <ul type="square">
+                    <li>censo ou recenseamento;</li>
+                    <li>são feitos, geralmente, quando a população é menor e/ou quando se exige um resultado exato.</li>
+                </ul>
+                <li><span class="textspan">Amostra:</span> é uma parte da população.</li>
+                <ul type="square">
+                    <li>pesquisa por amostragem;</li>
+                    <li>são feitas, geralmente, quando opta-se pela economia de tempo e/ou de recurso financeiro, quando a população é muito grande ou infinita e/ou quando são feitos testes destrutivos.</li>
+                </ul>
+            </ul>
+            <br />
+
+            <p>Para a organização dos dados, são construídas tabelas constituídas de título, cabeçalho, linhas e rodapé. Essas tabelas podem trazer dados absolutos (contagem real) e dados relativos (em porcentagem).</p>
+            <div class="img"><img class="img-fluid" src="imagens/imgestatistica/tabela.jpeg"></div>
+            <br />
+            <p>Em alguns casos, necessita-se dividir a tabela em classes para torná-la mais enxuta ou mais organizada. Existe alguns passos para organizar as classes da tabela:</p>
+            <ol type='1'>
+                <li>Para saber o número mais adequado de classes, faz-se a raiz quadrada do número total de objetos pesquisados.</li>
+                <li>Para saber a amplitude de cada classe, dividimos a amplitude total (diferença entre a maior e a menor idade) pelo número de classes.</li>
+                <li>Para uma melhor organização, geralmente os resultados são arredondados conforme a necessidade. </li>
+            </ol>
+
+            <p>A construção do gráfico pode ser feita a partir de alguns passos:</p>
+            <ol type="1">
+                <li>Identificar a concavidade do gráfico:</li>
+                <ul type="disc">
+                    <li>se coeficiente a > 0 a concavidade será para cima</li>
+                    <li>se coeficiente a &lt; 0 a concavidade será para baixo</li>
+                </ul>
+                <li>Calcular as raízes da função;</li>
+                <li>Calcular o corte no eixo y, atribuindo o valor de x = 0 na função (o corte no eixo y é igual ao valor do coeficiente C);</li>
+                <li>Calcular as coordenadas do vértice;</li>
+            </ol>
+            <div class="img"><img class="img-fluid" src="imagens/imgestatistica/tabelaClasses.jpeg"></div>
+            <br />
+
+            <p>Para estabelecer melhor a exibição da evolução dos dados, são construídos gráficos. Esses gráficos podem ser em colunas, em barras, em setores, em curvas ou em histogramas.</p>
+            <p><a href="https://mundoeducacao.uol.com.br/geografia/tipos-graficos.htm" target="_blank"><b>Acesse para saber mais sobre gráficos</b></a></p>
+            <br />
+
+            <p>Em estatística, possuímos as medidas de posição, sendo elas:</p>
+            <ul type="disc">
+                <li><span class="textspan">Média Aritmética Simples: </span> é o quociente entre a soma de todos os elementos do conjunto e a quantidade de elementos nesse conjunto.
+                    <p><b>Ms = (x<sub>1</sub> + x<sub>2</sub> + x<sub>3</sub> + … + x<sub>n</sub>) / n</b></p>
+                    <p>onde x são os termos e n é a quantidade de termos ( n > 1 )</p>
+                </li>
+                <li><span class="textspan">Média Aritmética Ponderada: </span> usada quando há valores que aparecem mais vezes no conjunto dado ou valores que possuem pesos diferentes.
+                    <p><b>Mp = (P<sub>1</sub> + N<sub>1</sub>) + (P<sub>2</sub> + N<sub>2</sub>) + (P<sub>3</sub> + N<sub>3</sub>) / (P<sub>1</sub> + P<sub>2</sub> + P<sub>3</sub>) </b></p>
+                </li>
+                <li><span class="textspan">Mediana: </span> na ordem crescente, a mediana é o valor que divide a amostra ou população em duas partes.
+                    <ul type="square">
+                        <li>Mediana com dados não agrupados:</li>
+                        <ul type="circle">
+                            <li><u>Número de termos (n) ímpar:</u> a mediana será o elemento central dos dados da sequência, sendo sua posição dada por: (n + 1) / 2</li>
+                            <li><u>Número de termos (n) par:</u> a mediana será a média aritmética entre os dois termos centrais. </li>
+                        </ul>
+                        <li>Mediana com dados agrupados: soma-se todos os pesos e divide por 2, a mediana será o termo central.</li>
+                        <li>Mediana com dados agrupados em classes: mesmo método que o anterior.</li>
+                    </ul>
+                </li>
+                <li><span class="textspan">Moda: </span> é o valor que ocorre com maior frequência na sequência numérica. </li>
+            </ul>
+            <br />
+
+            <h2>Considerações sobre o conteúdo</h2>
+            <p>Eu gostei muito de estudar esse conteúdo, principalmente por conta do seu emprego na programação. A mediana, por exemplo, é um cálculo utilizado nos códigos de ordenação de vetores, muito importantes para organizar uma sequência de dados. Além disso, eu achei um conteúdo bem fácil de entender e bem legal de realizar as atividades.
+            </p>
+            <br />
+
+            <h2>Métodos</h2>
+            <p>Para calcular as medidas de aplicação, bastou utilizar as fórmulas referentes às medidas solicitadas nos enunciados das atividades. A partir das fórmulas, realizava os cálculos conforme as regras descritas nos conceitos.</p>
+            <div class="img"> <img class="img-fluid" src="imagens/imgestatistica/questao5.png"> </div>
+            <div class="img"> <img class="img-fluid" src="imagens/imgestatistica/questaoAeB.jpeg"> </div>
+            <div class="img"> <img class="img-fluid" src="imagens/imgestatistica/questaoC.jpeg"> </div>
+            <br />
+
+            <h2>Desempenho no conteúdo e nas atividades</h2>
+            <p>Esse foi um dos conteúdos que mais consegui absorver, acredito que por ele estar muito presente nas atividades de programação. Eu não tive dúvidas em relação às atividades, achei que o conteúdo foi bem entendido.</p>
+            <p>Em relação às atividades, ainda não sei meu desempenho, porém acredito que tenha sido muito bom.
+            </p>
+            <br />
+
+            <center><a href="https://ifrs.edu.br/erechim/" target="_blank"><img id='ifrs' src='imagens/ifrs_erechim.png'></a></center>
+
+        </div>
+    </div>
+</body>
+
+</html>
