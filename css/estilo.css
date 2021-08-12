@@ -14,8 +14,7 @@
 }
 
 .logo {
-    border-radius: 100px;
-    width: 70px;
+    border-radius: 100px width: 70px;
     height: 70px;
 }
 
@@ -24,6 +23,24 @@
     width: 80px;
     height: 80px;
     box-shadow: 3px 3px 5px rgb(94, 81, 198);
+}
+
+#menu_inicial {
+    background-color: rgb(209, 203, 255);
+    border: 3px solid white;
+}
+
+#menu_inicial a {
+    color: rgba(44, 16, 162, 0.86);
+    font-size: 25px;
+    font-family: 'Leckerli One', cursive;
+    padding: 8px;
+    padding-right: 20px;
+    text-align: center;
+}
+
+#menu_inicial a:hover {
+    text-shadow: 5px 3px 6px rgb(94, 81, 198);
 }
 
 #menu {
@@ -94,7 +111,8 @@ tr {
     background-color: rgba(157, 134, 255, 0.86);
     margin: 3px;
     border-radius: 20px;
-    padding: 2px;
+    padding: 5px;
+    color: rgb(22, 11, 70);
 }
 
 b {
@@ -104,4 +122,9 @@ b {
 .img {
     padding: 8px;
     text-align: center;
+}
+
+.conteudos {
+    text-align: center;
+    text-shadow: 5px 3px 6px white;
 }

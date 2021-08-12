@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link type='text/css' rel='stylesheet' href='css/estilo.css'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@900&family=Leckerli+One&family=Signika&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <title> Matrizes e Determinantes </title>
+</head>
+
+<body>
+    <div class="container" bg>
+        <div id="capa">
+            <h1>
+                Matrizes e Determinantes
+            </h1>
+        </div>
+
+        <div id="menu">
+            <nav class="navbar navbar-expand-sm navbar-white">
+                <a class=" navbar-brand " href="index.html"><img class="logo" src="imagens/logo.png"> </a>
+                <ul class=" navbar-nav mx-auto">
+                    <li class=" nav-item ">
+                        <a class=" nav-link " href="Matrizes.html">Matrizes</a>
+                    </li>
+                    <li class=" nav-item ">
+                        <a class=" nav-link " href="SistemaLinear.html">Sistema Linear</a>
+                    </li>
+                    <li class=" nav-item ">
+                        <a class=" nav-link " href="TrigonometriaTriangulos.html">Trigonometria de Triângulos</a>
+                    </li>
+                    <li class=" nav-item ">
+                        <a class=" nav-link " href="conclusaoSegundo_1.html">Conclusão</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="body">
+            <h2>
+                Conceito e Métodos do conteúdo</h2>
+            <br />
+            <p> Para o conteúdo de Matrizes, escolhi dois conceitos: Determinante de Matrizes de Ordem maior que 3 e Inversa de matrizes de ordem 3. Por isso, teremos a conceituação, os métodos e as reflexões desses conteúdos nessa página.</p>
+            <br />
+            <p class="conteudos"><span class="textspan">Determinante de Matrizes de Ordem maior que 3 </span></p>
+            <br />
+
+            <p>Antes de entender o que é uma matriz de ordem maior que 3, temos que entender o conceito de matriz. Basicamente, uma matriz é uma tabela que organiza um conjunto de valores numéricos, dispostos em <i>m</i> linhas e <i>n</i> colunas. </p>
+            <p>Uma <span class="textspan">Matriz de Ordem maior que 3</span> significa que essa matriz possui mais que 3 linhas e 3 colunas. Ou seja, ela pode ser uma matriz 4x4, 5x5, 6x6, etc. <span class="textspan">Determinante </span> é um número real que está associado à uma matriz A. Eu gosto de representar o determinante desta forma: det(A). </p>
+            <br />
+            <p>Vou explicar, através de etapas, como eu resolveria uma matriz de ordem maior que 3:</p>
+            <ol type="1">
+                <li>Escolhemos uma de suas filas (linhas ou colunas), de preferência aquela que tiver a maior quantidade de números zeros, a fim de facilitar os cálculos;</li>
+                <li>Somamos os produtos dos elementos dessa fila pelos respectivos cofatores, obtendo uma equação que irá definir o determinante.</li>
+                <li> Calculamos os cofatores:</li>
+                <ol type="i">
+                    <li>Eliminamos a linha e a coluna do elemento a<sub>ij</sub>;
+                    </li>
+                    <li>Multiplicamos a potência (-1)<sup>i + j</sup> pela matriz que sobrou ao cortamos a linha e a coluna;
+                    </li>
+                </ol>
+                <li>Após descobrirmos todos os cofatores, substituímos na equação do determinante e obtemos o valor final do determinante da matriz.
+                </li>
+            </ol>
+            <br />
+            <p>Para compreender melhor, realizei um vídeo resolvendo a determinante de uma matriz 4x4:</p>
+            <br />
+            <center><iframe width="560" height="315" src="https://www.youtube.com/embed/ADAY_PhxAZY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+            <br />
+            <br />
+
+            <p class="conteudos"><span class="textspan">Inversa de Matriz de Ordem 3</span></p>
+            <br />
+
+            <p>Sabendo o conceito de matriz, conceituaremos a matriz inversa. Basicamente, dada uma matriz quadrada A, denominamos de <span class="textspan">Matriz Inversa de A</span> uma matriz A<sup>-1</sup>, que quando for multiplicada pela matriz A resultará em uma matriz Identidade. Ou seja:</p>
+            <p><b>A x A<sup>-1</sup> = I</b></p>
+            <p>Lembramos que Matriz Identidade é uma matriz quadrada onde a<sub>ij</sub> é igual a 1 quando i for igual à j, e a<sub>ij</sub> é igual a 0 quando i for diferente de j.</p>
+            <br />
+
+            <p>Assim como antes, vamos resolver a matriz inversa de ordem 3 por etapas:</p>
+            <ol type="1">
+                <li>Dada a matriz A, atribuímos à A<sup>-1</sup> uma matriz genérica;</li>
+                <li> Montamos o cálculo de forma que as matrizes fiquem igual à A x A<sup>-1</sup> = I</li>
+                <li>Agora multiplicamos as matrizes A e A<sup>-1</sup>;</li>
+                <li>Com o resultado das multiplicações, formamos três sistemas:</li>
+                <ol type="i">
+                    <li>O primeiro com as equações a<sub>11</sub>, a<sub>21</sub> e a<sub>31</sub>;</li>
+                    <li>O segundo com as equações a<sub>21</sub>, a<sub>22</sub> e a<sub>23</sub>;</li>
+                    <li>O terceiro com as equações a<sub>31</sub>, a<sub>32</sub> e a<sub>33</sub>;</li>
+                </ol>
+                <li>Agora é só resolver os sistemas para obter os valores das incógnitas;</li>
+                <li>Substituímos os valores das incógnitas naquela matriz genérica que tínhamos atribuídos para A<sup>-1</sup>, obtendo, finalmente, os valores da matriz inversa de A.</li>
+            </ol>
+            <br />
+            <p>Para compreender melhor, realizei um vídeo resolvendo a inversa de uma matriz de ordem 3:</p>
+            <br />
+            <center><iframe width="560" height="315" src="https://www.youtube.com/embed/ZGdwDzq5NJA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+            <br />
+            <br />
+
+            <h2>Reflexões e Considerações</h2>
+            <br />
+            <p>Sobre o primeiro conceito, <b>determinante de uma matriz de ordem maior que 3</b>, o escolhi porque, dentro do conteúdo de Matrizes, ele foi o que eu mais gostei e que menos tive dificuldades. Além disso, o desenvolvimento do cálculo faz com que a gente possa aplicar outra regra bastante importante dentro do conteúdo de Matrizes: a regra de Sarus. Ela é aplicada para resolvermos os cofatores de matrizes 3x3.</p>
+            <br />
+            <p>Foi um conceito importante para mim pois, na Lista de Exercícios 2, exercício 2, sobre Sistemas Lineares, eu utilizei essa maneira de descobrir o determinante de uma matriz 4x4, pois estava com dificuldade em realizar o escalonamento. Confesso que a resolução ficou bem extensa, pois eu precisei fazer essa técnica em conjunto com a Regra de Cramer para resolver o sistema, mas foi a maneira que eu achei mais fácil de conseguir entender o problema e resolver com eficiência (inclusive, foi a questão que eu resolvi no vídeo). </p>
+            <br />
+            <br />
+            <p>Sobre o segundo conceito, <b>a inversa de uma matriz de ordem 3</b>, eu também escolhi porque achei legal de calcular, mas também porque eu tive dificuldade em resolvê-las. Na primeira lista eu não sabia calcular sistemas lineares 3x3, então acabei deixando o exercício incompleto.</p>
+            <br />
+            <p>No Trabalho 1, questão 2, eu tive um pouco de dificuldade para achar a inversa, não por não ter entendido a parte de matrizes, mas por conta dos sistemas 3x3. Eu tentei realizar pelo método do escalonamento, achando que ia ser mais rápido, mas os resultados das incógnitas sempre davam errado, pois, quando eu multiplicava A<sup>-1</sup> pela matriz A, não resultava em uma matriz Identidade. Além disso, eu já sabia que a matriz possuía uma inversa pois o determinante não era 0, por isso concluí que as incógnitas estavam erradas. Por fim, acabei desistindo de fazer pelo escalonamento e utilizei o método de substituição, achando a matriz inversa bem mais rapidamente e com mais facilidade.</p>
+            <br />
+            <div class="img"><img class="img-fluid" src="matematicaII_portfolio1/Quest%C3%A3o2Lista2_PROBLEMA.png"></div>
+            <br />
+            <div class="img"><img class="img-fluid" src="matematicaII_portfolio1/Quest%C3%A3o2Lista2_RESOLU%C3%87%C3%83O_1.png"></div>
+            <div class="img"><img class="img-fluid" src="matematicaII_portfolio1/Quest%C3%A3o2Lista2_RESOLU%C3%87%C3%83O_2.png"></div>
+            <div class="img"><img class="img-fluid" src="matematicaII_portfolio1/Quest%C3%A3o2Lista2_RESOLU%C3%87%C3%83O4.png"></div>
+            <br />
+            <p>Enfim, escolhi esse conteúdo justamente por essa dificuldade que os sistemas lineares 3x3 me causaram, apesar de eu ter gostado bastante e de ter achado simples os cálculos da inversa de matrizes de ordem 2.</p>
+
+
+            <a href="https://ifrs.edu.br/erechim/" target="_blank"><img id='ifrs' src='imagens/ifrs_erechim.png'></a>
+        </div>
+    </div>
+</body>
+
+</html>

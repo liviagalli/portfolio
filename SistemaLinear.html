@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link type='text/css' rel='stylesheet' href='css/estilo.css'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@900&family=Leckerli+One&family=Signika&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <title> Sistema Linear </title>
+</head>
+
+<body>
+    <div class="container" bg>
+        <div id="capa">
+            <h1>
+                Sistema Linear
+            </h1>
+        </div>
+
+        <div id="menu">
+            <nav class="navbar navbar-expand-sm navbar-white">
+                <a class=" navbar-brand " href="index.html"><img class="logo" src="imagens/logo.png"> </a>
+                <ul class=" navbar-nav mx-auto">
+                    <li class=" nav-item ">
+                        <a class=" nav-link " href="Matrizes.html">Matrizes</a>
+                    </li>
+                    <li class=" nav-item ">
+                        <a class=" nav-link " href="SistemaLinear.html">Sistema Linear</a>
+                    </li>
+                    <li class=" nav-item ">
+                        <a class=" nav-link " href="TrigonometriaTriangulos.html">Trigonometria de Triângulos</a>
+                    </li>
+                    <li class=" nav-item ">
+                        <a class=" nav-link " href="conclusaoSegundo_1.html">Conclusão</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="body">
+            <h2>
+                Conceito e Métodos do conteúdo</h2>
+            <br />
+
+            <p class="conteudos"><span class="textspan"> Regra de Cramer </span></p>
+            <br />
+            <p>Dentro do conteúdo de Sistema Lineares, a Regra de Cramer é um método utilizado para resolver sistemas que possuem o número de incógnitas igual ao número de equações, além de que o determinante da matriz incompleta (aquela que não vai os termos independentes da equação) precisa ser igual à 0, significando que o sistema é um Sistema Possível Determinado (SPD).</p>
+            <br />
+            <p>Apesar dele só ser possível nas condições descritas acima, sua utilização pode facilitar muito a resolução de sistemas complexos. Através de etapas, vou descrever como resolvemos um sistema 3x3 através da Regra de Cramer:</p>
+            <ol type="1">
+                <li>Primeiramente, precisamos saber se o determinante da matriz incompleta é diferente de 0, então calculamos esse determinante. Se o resultado for diferente de 0, então podemos continuar com a Regra de Cramer, senão precisaremos utilizar o método da substituição ou o escalonamento;</li>
+                <li>Tendo o determinante, vamos calcular <b>Dx, Dy e Dz</b>. Isso será possível substituindo a coluna dos coeficientes de x, y ou z pelos termos independentes da matriz;
+                </li>
+                <li>Obtendo os valores de Dx, Dy e Dz, utilizaremos as seguintes fórmulas para descobrir o x, y e z:</li>
+                <ol type="i">
+                    <li><b>x = Dx / D</b></li>
+                    <li><b>y = Dy / D</b></li>
+                    <li><b>z = Dz / D</b></li>
+                </ol>
+                <li>Claro que, se o sistema possuir mais de 3 incógnitas, iremos resolver os determinantes das demais incógnitas para obter o determinante.</li>
+            </ol>
+            <br />
+
+            <p>Para esse conteúdo, separei uma atividade em que realizei a Regra de Cramer para exemplificar:</p>
+
+            <div class="img"><img class="img-fluid" src="matematicaII_portfolio1/Quest%C3%A3o3Lista2_PROBLEMA.png"></div>
+            <div class="img"><img class="img-fluid" src="matematicaII_portfolio1/Quest%C3%A3o3Lista2_RESOLU%C3%87%C3%83O.png"></div>
+
+            <br />
+            <br />
+
+            <h2>Reflexões e Considerações</h2>
+            <br />
+            <p>Eu escolhi falar sobre a <b>Regra de Cramer</b> pois, dentre todos os métodos de resolução de sistemas lineares, esse foi o que eu achei mais fácil. Eu tive MUITA dificuldade no <b>método de escalonamento</b>, não conseguia fazer com que as incógnitas das matrizes ficassem zeradas para montar o sistema escalonado. Por algum motivo, o processo sempre dava errado e eu nunca sabia como consertar. Devido a isso, eu só conseguia resolver os sistemas pelo método de escalonamento quando o processo era muito simples, senão eu recorria ao método da substituição para os casos que não dava para aplicar a Regra de Cramer. </p>
+            <br />
+            <p>Além disso, eu gosto bastante do método de Cramer, é simples e interessante de realizar, apesar de que, quando as matrizes são de ordem maior que 3, não é possível utilizar a Regra de Sarus, deixando o cálculo um pouco mais extenso. Porém, ainda sim, achei mais fácil do que o escalonamento.</p>
+
+            <br />
+            <a href="https://ifrs.edu.br/erechim/" target="_blank"><img id='ifrs' src='imagens/ifrs_erechim.png'></a>
+        </div>
+    </div>
+</body>
+
+</html>
