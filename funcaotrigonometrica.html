@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link type='text/css' rel='stylesheet' href='css/estilo.css'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@900&family=Leckerli+One&family=Signika&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <title> Função Trigonométrica </title>
+</head>
+
+<body>
+    <div class="container" bg>
+        <div id="capa">
+            <h1>
+                Função Trigonométrica
+            </h1>
+        </div>
+
+        <div id="menu">
+            <nav class="navbar navbar-expand-sm navbar-white">
+                <a class=" navbar-brand " href="index.html"><img class="logo" src="imagens/logo.png"> </a>
+                <ul class=" navbar-nav mx-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                            1º Trimestre
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class=" nav-link " href="Matrizes.html">Matrizes</a>
+                            <a class=" nav-link " href="SistemaLinear.html">Sistema Linear</a>
+                            <a class=" nav-link " href="TrigonometriaTriangulos.html">Trigonometria de Triângulos</a>
+                            <a class=" nav-link " href="conclusaoSegundo_1.html">Conclusão</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                            2º Trimestre
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class=" nav-link " href="arcos_ciclotrigonometrico.html">Arcos, Ângulos e Ciclo Trigonométrico</a>
+                            <a class=" nav-link " href="funcaotrigonometrica.html">Função Trigonométrica</a>
+                            <a class=" nav-link " href="analisecombinatoria.html">Análise Combinatória</a>
+                            <a class=" nav-link " href="conclusaoSegundo_2.html">Conclusão</a>
+                        </div>
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
+        <div class="body">
+            <h2>
+                Conceito e Métodos do conteúdo</h2>
+            <br />
+
+            <p class="conteudos"><span class="textspan"> Gráfico de Funções Trigonométricas </span></p>
+            <br />
+            <p>A construção e análise de gráficos de funções trigonométricas nos ajuda a entender a maioria dos conceitos aprendidos sobre funções trigonométricas. Para criar um gráfico de maneira eficiente e rápida, iremos fazer algumas análises a partir da função trigonométrica apresentada. Essa análise utilizará a seguinte expressão geral:</p>
+            <br />
+
+            <p><b>f(x) = A + B * sen(Cx + D)</b></p>
+            <br />
+
+            <p>Baseada nessa expressão geral, os coeficientes A, B, C e D podem indicar as seguintes alterações no gráfico:</p>
+            <br />
+
+            <div class="table-responsive-sm">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th><span class="textspan">Coeficiente</span></th>
+                            <th><span class="textspan">Transformação</span></th>
+                            <th><span class="textspan">O que muda</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>A</td>
+                            <td>Movimentação vertical (muda a imagem)</td>
+                            <td>
+                                - Se A > 0 o gráfico sobe no eixo y<br />
+                                - Se A &lt; 0 o gráfico desce no eixo x
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>B</td>
+                            <td>Dilatação e compressão vertical (muda a imagem)</td>
+                            <td> - Se B > 1 o gráfico estica no y<br />
+                                - Se 0 &lt; B &lt; 1 o gráfico achata no y<br />
+                                - Valores negativos o gráfico reflete em relação ao eixo x
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>C</td>
+                            <td>Dilatação e compressão horizontal (muda o período)</td>
+                            <td>- Se C > 1 o gráfico comprime no x<br />
+                                - Se 0 &lt; C &lt; 1 o gráfico dilata no x <br />
+                                - Valores negativos o gráfico reflete em relação ao eixo x (Seno) </td>
+                        </tr>
+                        <tr>
+                            <td>D</td>
+                            <td>Movimentação horizontal </td>
+                            <td>Indica deslocamento para a esquerda ou direita, conforme o valor de (-d/c)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <br />
+            <p>Observar a presença desses coeficientes na função trigonométrica auxilia a construção do gráfico.</p>
+
+            <br />
+            <p>Quanto à identificação dos valores no gráfico, seguimos os passos:</p>
+            <ol type='1'>
+                <li>Achar o domínio: todas as funções seno e cosseno possuem D = R;</li>
+                <li>Achar a imagem:
+                    <ol type="a">
+                        <li>-1 &le; sen 𝛼 &le; 1</li>
+                        <li>-1 &le; cos 𝛼 &le; 1</li>
+                        <p>Tudo que somar/subtrair e/ou multiplicar/dividir o cosseno ou seno vai mexer na imagem. </p>
+                    </ol>
+                </li>
+                <li>Achar o período: P = 2𝝅 / | C |</li>
+                <li>Achar as raízes, se possível: igualamos a função a zero f(x) = 0</li>
+                <li>Achar os pontos extremos (mínimos e máximos) da função: considerando Im(f) = [a, b], então:
+                    <ol type="a">
+                        <li>f(x) = b -> ponto máximo</li>
+                        <li>f(x) = a -> ponto mínimo</li>
+                    </ol>
+                </li>
+            </ol>
+            <br />
+            <p>Para exemplificar, utilizarei alguns exercícios da Lista 5.</p>
+
+            <div class="img"><img class="img-fluid" src="matematicaII_portfolio2/atividadeGraficos_questao.png"></div>
+            <div class="img"><img class="img-fluid" src="matematicaII_portfolio2/graficos1_resposta.png"></div>
+            <div class="img"><img class="img-fluid" src="matematicaII_portfolio2/graficos2_resposta.png"></div>
+            <div class="img"><img class="img-fluid" src="matematicaII_portfolio2/graficos3_resposta.png"></div>
+            <div class="img"><img class="img-fluid" src="matematicaII_portfolio2/graficos4_resposta.png"></div>
+            <div class="img"><img class="img-fluid" src="matematicaII_portfolio2/graficos5_resposta.png"></div>
+            <br />
+
+            <p>Além desse exercício que propõe a construção do gráfico seguindo os passos descritos, também é possível aplicar esse conhecimento para analisar gráficos e funções trigonométricas. No trabalho 2 foi possível resolver uma das questões a partir dessa análise:</p>
+            <div class="img"><img class="img-fluid" src="matematicaII_portfolio2/trabalho2_questao2_1.png"></div>
+            <div class="img"><img class="img-fluid" src="matematicaII_portfolio2/trabalho2_questao2_2.png"></div>
+            <div class="img"><img class="img-fluid" src="matematicaII_portfolio2/trabalho2_questao2_res.png"></div>
+            <br />
+
+            <br />
+            <br />
+
+            <h2>Reflexões e Considerações</h2>
+            <br />
+            <p>Apesar de considerar ser o conteúdo mais trabalhoso do trimestre, principalmente por conta da construção dos gráficos, gostei bastante de Funções Trigonométricas. Escolhi a construção de gráficos pois, como já mencionado na explicação, é um conteúdo que consegue englobar muitos conceitos estudados dentre de Funções Trigonométricas, podendo ajudar a resolver diversos tipos de problemas, como foi mostrado na questão do ENEM. </p>
+            <br />
+            <p>Além disso, eu achei bastante desafiador e divertido criar os gráficos. Utilizei uma atividade do Geogebra disponibilizada pela professora para conferir se os gráficos estavam sendo construídos corretamente nas atividades, o que acabou contribuindo para compreender melhor como os coeficientes das funções alteram o gráfico.</p>
+
+            <br />
+            <a href="https://ifrs.edu.br/erechim/" target="_blank"><img id='ifrs' src='imagens/ifrs_erechim.png'></a>
+        </div>
+    </div>
+</body>
+
+</html>

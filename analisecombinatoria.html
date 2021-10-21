@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link type='text/css' rel='stylesheet' href='css/estilo.css'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@900&family=Leckerli+One&family=Signika&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <title> Análise Combinatória </title>
+</head>
+
+<body>
+    <div class="container" bg>
+        <div id="capa">
+            <h1>
+                Análise Combinatória
+            </h1>
+        </div>
+
+        <div id="menu">
+            <nav class="navbar navbar-expand-sm navbar-white">
+                <a class=" navbar-brand " href="index.html"><img class="logo" src="imagens/logo.png"> </a>
+                <ul class=" navbar-nav mx-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                            1º Trimestre
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class=" nav-link " href="Matrizes.html">Matrizes</a>
+                            <a class=" nav-link " href="SistemaLinear.html">Sistema Linear</a>
+                            <a class=" nav-link " href="TrigonometriaTriangulos.html">Trigonometria de Triângulos</a>
+                            <a class=" nav-link " href="conclusaoSegundo_1.html">Conclusão</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                            2º Trimestre
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class=" nav-link " href="arcos_ciclotrigonometrico.html">Arcos, Ângulos e Ciclo Trigonométrico</a>
+                            <a class=" nav-link " href="funcaotrigonometrica.html">Função Trigonométrica</a>
+                            <a class=" nav-link " href="analisecombinatoria.html">Análise Combinatória</a>
+                            <a class=" nav-link " href="conclusaoSegundo_2.html">Conclusão</a>
+                        </div>
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
+        <div class="body">
+            <h2>
+                Conceito e Métodos do conteúdo</h2>
+            <br />
+
+            <p class="conteudos"><span class="textspan"> Permutação </span></p>
+            <br />
+            <p>A palavra “permutar” possui o sentido de trocar de posição, ou seja, em análise combinatória é associada ao conceito de trocar de lugar os elementos de um problema combinatório. A permutação considera a ordenação dos elementos, além de se dividir em duas: permutação simples e permutação com repetição.</p>
+            <br />
+
+            <p class="conteudos"><span class="textspan"> Permutação Simples </span></p>
+            <br />
+
+            <p>A permutação simples é a ordenação de elementos de um conjunto, onde nenhum deles se repete. Indicamos por Pn o número de permutações simples de n elementos:</p>
+            <p><b>Pn = n * (n-1) * (n-2)..... 3 * 2 * 1</b></p>
+            <br />
+
+            <p>Percebemos que nessa multiplicação que os fatores são n e inteiros menores do que ele, por isso chamamos de fatorial. Então, a fórmula de permutação simples pode ser entendida como:</p>
+            <p><b>Pn = n!</b></p>
+            <br />
+
+            <p>Exemplo:</p>
+            <div class="img"><img class="img-fluid" src="matematicaII_portfolio2/permutacaosimples.jpeg"></div>
+            <br />
+
+            <p class="conteudos"><span class="textspan"> Permutação com Repetição </span></p>
+            <br />
+
+            <p>A permutação com repetição é a ordenação de elementos de um conjunto, porém esses elementos podem se repetir e, por isso, a permutação é diferente. A fórmula para a permutação com repetição é:</p>
+            <p><b>Pn<sup>a,b,c...</sup> = n! / a! * b! * c! …</b></p>
+            <br />
+
+            <p>Nessa fórmula, podemos interpretar que n! é a quantidade de elementos do conjunto e os coeficientes a, b e c são os elementos (quantidade deles) que se repetem dentro do conjunto. A permutação entre elementos repetidos pode gerar resultados iguais, o que pode interferir na contagem dos diferentes tipos de ordenação que um conjunto possui.</p>
+            <br />
+
+            <p> Exemplo:</p>
+            <div class="img"><img class="img-fluid" src="matematicaII_portfolio2/permutacaorepeticao.jpeg"></div>
+            <br />
+
+            <div class="table-responsive-sm">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th><span class="textspan">Diferenciando Permutação Simples de Permutação com Repetição</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b>Quantos são os anagramas da palavra LUCIDEZ?</b><br />
+                                Nesse caso, a palavra “LUCIDEZ” não possui nenhuma letra repetida em seu conjunto, então podemos utilizar a <u>permutação simples.</u><br />
+                                Pn = n!<br />
+                                P<sub>7</sub> = 7!<br />
+                                P<sub>7</sub> = 7 * 6 * 5 * 4* 3 * 2 * 1<br />
+                                P<sub>7</sub> = 5040 anagramas
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><b>Quantos são os anagramas da palavra BANANA?</b><br />
+                                Nesse caso, a palavra “BANANA” repete 3 vezes a letra A e 2 vezes a letra N, então precisamos utilizar a <u>permutação com repetição</u><br />
+                                P<sub>6</sub><sup>3, 2</sup> = 6! / 3! * 2!<br />
+                                P<sub>6</sub><sup>3, 2</sup> = 6 * 5 * 4 / 2<br />
+                                P<sub>6</sub><sup>3, 2</sup> = 120 / 2<br />
+                                P<sub>6</sub><sup>3, 2</sup> = 60 anagramas
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <br />
+
+            <p class="conteudos"><span class="textspan"> Combinação Simples </span></p>
+            <br />
+            <p>Assim como permutação, combinação simples é um método utilizado para organizar um conjunto de elementos. A diferença entre os dois métodos é que na combinação simples a ordem dos elementos do conjunto não interfere, porém não há repetição no conjunto. A expressão geral de combinação simples é dada por:</p>
+            <p><b>C<sub>n, p</sub> = n! / p! * (n - p)!</b></p>
+            <p>onde n é a quantidade total de elementos não repetidos e p é a quantidade de elementos distintos em cada agrupamento.</p>
+            <br />
+
+            <p>Alguns exemplos de exercícios feitos na Lista 6 e no Trabalho 2:</p>
+            <div class="img"><img class="img-fluid" src="matematicaII_portfolio2/combinacao_questao6.png"></div>
+            <div class="img"><img class="img-fluid" src="matematicaII_portfolio2/combinacao6_resposta.jpeg"></div>
+            <br />
+
+            <div class="img"><img class="img-fluid" src="matematicaII_portfolio2/combinacao_questao7.png"></div>
+            <div class="img"><img class="img-fluid" src="matematicaII_portfolio2/combinacao7_resposta.jpeg"></div>
+            <br />
+
+            <div class="img"><img class="img-fluid" src="matematicaII_portfolio2/trabalho2_questao4.png"></div>
+            <div class="img"><img class="img-fluid" src="matematicaII_portfolio2/trabalho2_questao4_res.jpeg"></div>
+            <br />
+
+            <br />
+            <br />
+
+            <h2>Reflexões e Considerações</h2>
+            <br />
+            <p>Quanto ao primeiro conteúdo, escolhi explicar sobre permutação pois gostei bastante de fazer os exercícios, além de ser um conteúdo muito cobrado nos vestibulares, por isso achei importante destacar a diferença entre permutação simples e com repetição, bem como explicar exatamente como eu resolveria um exercício de permutação.
+            </p>
+            <br />
+            <p>Quanto à Combinação Simples, também é um conteúdo cobrado nos vestibulares e por isso achei importante reforçar os conceitos através do portfólio. Análise Combinatória, por si só, é um conteúdo que sempre é exigido no ENEM, requisitando muita atenção na hora de interpretar o enunciado. Devido a isso, gostei bastante das questões do ENEM propostas pela professora no trabalho 2, é uma maneira de reconhecer como os conteúdos que estudamos são cobrados nos vestibulares.</p>
+
+            <br />
+            <a href="https://ifrs.edu.br/erechim/" target="_blank"><img id='ifrs' src='imagens/ifrs_erechim.png'></a>
+        </div>
+    </div>
+</body>
+
+</html>
