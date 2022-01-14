@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link type='text/css' rel='stylesheet' href='css/estilo.css'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@900&family=Leckerli+One&family=Signika&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <title>Probabilidade</title>
+</head>
+
+<body>
+    <div class="container" bg>
+        <div id="capa">
+            <h1>
+                Probabilidade
+            </h1>
+        </div>
+
+        <div id="menu">
+            <nav class="navbar navbar-expand-sm navbar-white">
+                <a class=" navbar-brand " href="index.html"><img class="logo" src="imagens/logo.png"> </a>
+                <ul class=" navbar-nav mx-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                            1º Trimestre
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class=" nav-link " href="Matrizes.html">Matrizes</a>
+                            <a class=" nav-link " href="SistemaLinear.html">Sistema Linear</a>
+                            <a class=" nav-link " href="TrigonometriaTriangulos.html">Trigonometria de Triângulos</a>
+                            <a class=" nav-link " href="conclusaoSegundo_1.html">Conclusão</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                            2º Trimestre
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class=" nav-link " href="arcos_ciclotrigonometrico.html">Arcos, Ângulos e Ciclo Trigonométrico</a>
+                            <a class=" nav-link " href="funcaotrigonometrica.html">Função Trigonométrica</a>
+                            <a class=" nav-link " href="analisecombinatoria.html">Análise Combinatória</a>
+                            <a class=" nav-link " href="conclusaoSegundo_2.html">Conclusão</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                            3º Trimestre
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class=" nav-link " href="binomiodenewton.html">Binômio de Newton</a>
+                            <a class=" nav-link " href="probabilidade.html">Probabilidade</a>
+                            <a class=" nav-link " href="conclusaoSegundo_3.html">Conclusão</a>
+                        </div>
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
+        <div class="body">
+            <h2>
+                Conceito e Métodos do conteúdo</h2>
+            <br />
+
+            <p class="conteudos"><span class="textspan">Multiplicação de Probabilidades</span></p>
+            <br />
+            <p>A probabilidade, em seu modo mais simples, é um cálculo que basicamente consiste em dividir o número de casos favoráveis (quantidade do que eu quero) pelo número de casos possíveis (quantidade do que eu tenho disponível - o todo). A multiplicação de probabilidades ocorre quando uma situação de probabilidade envolve dois ou mais eventos.
+            </p>
+            <br />
+
+            <p>Porém, antes de tudo, é necessário verificar se os eventos são dependentes ou independentes entre si. Um <u>evento independente</u> ocorre quando a probabilidade de ocorrência de um dos eventos não depende da ocorrência dos outros.</p>
+            <p> <b>p(A e B) = p(A) * p (B)</b></p>
+            <br />
+
+            <p>Um <u>evento dependente</u> ocorre quando há uma <b>probabilidade condicional</b>. Isto é, quando precisamos calcular a probabilidade de um evento A dado que o evento B ocorreu.</p>
+
+            <p><b>p(A e B) = p(A) * p(B dado que A ocorreu)</b></p>
+            <br />
+            <p>Para exemplificar, utilizarei a <u>Questão 2 do Trabalho 3:</u></p>
+            <div class="img"><img class="img-fluid" src="matematicaII_portfolio3/trabalho3_questao2_enun.png"></div>
+            <br />
+
+            <p>Antes de resolver os problemas, calculemos o espaço amostral (o “todo” disponível). A retirada de cartas SEM reposição significa que, ao retirar a primeira carta, o baralho terá as 52 cartas como possibilidade. Porém, como não há a reposição desta carta retirada ao baralho, a retirada da segunda carta contará com apenas 51 cartas como possibilidades.</p>
+            <br />
+
+            <p>Sendo assim, o espaço amostral e dado pela multiplicação do todo da primeira retirada de carta (52) e do todo da segunda retirada de carta (51).</p>
+            <p><b>n(U) = 52 * 51</b></p>
+            <p><b>n(U) = 2.652</b></p>
+            <br />
+
+            <p>Agora, vejamos cada problema:</p>
+            <br />
+            <p><b>A-</b> Existem 13 cartas de copas e, como será a primeira carta retirada, ainda há 52 cartas disponíveis ao todo. Portanto:</p>
+            <p><b>n(U) = 52 cartas</b></p>
+            <p><b>n(A) = 13 cartas de copas</b></p>
+            <br />
+
+            <p>Agora, aplicamos o conceito básico da probabilidade para o evento A:</p>
+            <p><b>p(A) = 13 / 52</b></p>
+            <p><b>p(A) = 1 / 4</b></p>
+            <br />
+            <p>Ou seja, a probabilidade de sair “copas” na primeira retirada é 1/4.</p>
+            <br />
+            <br />
+
+            <p><b>B-</b> Nesse caso, os eventos A e B são dependentes. Como a primeira carta foi retirada e não houve a sua reposição, o espaço amostral é reduzido:</p>
+            <p><b>n(U) = 51 cartas</b></p>
+            <p><b>n(B | A) = 13 cartas de paus</b></p>
+            <br />
+
+            <p>Agora, aplicamos o conceito básico da probabilidade para o evento B:</p>
+            <p><b>p(B | A) = 13 / 51</b></p>
+            <br />
+
+
+            <p>Agora, multiplicamos p(A) e p(B | A) visto que são <u>eventos dependentes</u>, isto é, B depende que A ocorra para que ele ocorra em seguida:</p>
+            <p><b>p(A e B) = (1 / 4) * (13 / 51)</b></p>
+            <p><b>p(A e B) = 13 / 204</b></p>
+            <br />
+            <p>Portanto, a probabilidade de B ocorrer, dado que A ocorreu, é 13/204.</p>
+            <br />
+
+            <p>Alguns outros exercícios de multiplicação de probabilidade:</p>
+            <div class="img"><img class="img-fluid" src="matematicaII_portfolio3/lista7_questao8_enun.png"></div>
+            <div class="img"><img class="img-fluid" src="matematicaII_portfolio3/lista7_questao8_res.jpeg"></div>
+            <br />
+            <br />
+
+            <div class="img"><img class="img-fluid" src="matematicaII_portfolio3/trabalho3_questao5_enun.png"></div>
+            <div class="img"><img class="img-fluid" src="matematicaII_portfolio3/trabalho3_questao5_res1.jpeg"></div>
+            <div class="img"><img class="img-fluid" src="matematicaII_portfolio3/trabalho3_questao5_res2.jpeg"></div>
+            <br />
+            <br />
+
+
+
+            <h2>Reflexões e Considerações</h2>
+            <br />
+            <p>Dentro do conteúdo de probabilidade, o conceito de multiplicação de probabilidades foi o que mais me interessou e o que mais gostei de resolver exercícios, por isso o escolhi para apresentar no portfólio. Creio que não tive muitas dificuldades para resolvê-los, pois procurei compreender bem o conceito de probabilidade simples e probabilidade condicional (que ocorre em muitos problemas) para fazer os exercícios de multiplicação. Gostei bastante.</p>
+
+            <br />
+            <a href="https://ifrs.edu.br/erechim/" target="_blank"><img id='ifrs' src='imagens/ifrs_erechim.png'></a>
+        </div>
+    </div>
+</body>
+
+</html>
